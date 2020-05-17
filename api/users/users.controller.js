@@ -1,7 +1,7 @@
 const Users = require("./users.model");
 
 async function getAllUsers(req, res) {
-  const { page = 1, limit = 10 } = req.query;
+  const { page = 1, limit = 100 } = req.query;
   const projection = {
     kids: 0,
     maritalStatus: 0,
